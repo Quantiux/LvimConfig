@@ -16,6 +16,10 @@ lvim.plugins = {
   -- python dap
   "mfussenegger/nvim-dap-python",
 
+  -- python venv switcher
+  "AckslD/swenv.nvim",
+  "stevearc/dressing.nvim",
+
   -- tabnine
   {
     "tzachar/cmp-tabnine",

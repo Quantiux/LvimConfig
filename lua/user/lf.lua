@@ -19,3 +19,9 @@ require("lf").setup{
   mappings = true,  -- whether terminal buffer mapping is enabled
   tmux = false,     -- keep tmux statusline on opening of Lf
 }
+
+-- reassign <leader>e to lf file manager
+lvim.builtin.which_key.mappings["e"] = {}
+lvim.builtin.which_key.mappings["e"] = {
+  ":Lf<CR>", "lf explorer",
+}

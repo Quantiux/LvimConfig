@@ -2,10 +2,10 @@ lvim.builtin.treesitter.ensure_installed = {
   "python",
 }
 
--------------------------------------
--- set up linter and formatter
+-------------------------------------------------------------------------------
+-- set up linter and formatter (first mason-install "black", "isort", "flake8")
 -- flake8 extend-ignore: https://stackoverflow.com/a/73569444/9070040
--------------------------------------
+-------------------------------------------------------------------------------
 local linters = require "lvim.lsp.null-ls.linters"
 linters.setup { {
   command = "flake8",

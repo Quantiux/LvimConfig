@@ -8,3 +8,8 @@ require("code_runner").setup{
     size = 17,
   },
 }
+
+-- keybinding
+lvim.builtin.which_key.mappings["r"] = {
+  ":RunCode<CR>", "Run code"
+}

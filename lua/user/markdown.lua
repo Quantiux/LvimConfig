@@ -4,6 +4,11 @@ require("lvim.lsp.manager").setup("marksman")
 -- run markdown-preview
 vim.fn["mkdp#util#install"]()
 
--- markdown-preview keymapping
-lvim.keys.normal_mode["<C-s>"] = ":MarkdownPreview<CR>"
-lvim.keys.normal_mode["<M-s>"] = ":MarkdownPreviewStop<CR>"
+-- Markdown preview key groups
+lvim.builtin.which_key.mappings["m"] = {
+  name = "Markdown",
+  p = { "<cmd>MarkdownPreview<cr>", "Preview" },
+  c = { "<cmd>MarkdownPreviewStop<cr>", "Close" },
+}
+
+
