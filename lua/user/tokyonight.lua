@@ -4,3 +4,4 @@ require("tokyonight").setup{
     -- colors.comment = "#565f89"   -- original
   end
 }
+lvim.builtin.theme.tokyonight.options.terminal_colors = false    -- use terminal's own color

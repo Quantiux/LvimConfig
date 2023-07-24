@@ -1,6 +1,8 @@
 lvim.plugins = {
-  -- -- one dark pro colorscheme
+  -- colorscheme
   -- "olimorris/onedarkpro.nvim",
+  -- { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+
 
   -- markdown preview
   "iamcco/markdown-preview.nvim",
