@@ -1,11 +1,17 @@
+--------------------------------------------------
+--------------------------------------------------
+-- config for python
+--------------------------------------------------
+--------------------------------------------------
+-- make sure treesitter for python is installed
 lvim.builtin.treesitter.ensure_installed = {
   "python",
 }
 
--------------------------------------
--- set up linter and formatter
+-------------------------------------------------------------------------------
+-- set up linter and formatter (first mason-install "black", "isort", "flake8")
 -- flake8 extend-ignore: https://stackoverflow.com/a/73569444/9070040
--------------------------------------
+-------------------------------------------------------------------------------
 local linters = require "lvim.lsp.null-ls.linters"
 linters.setup { {
   command = "flake8",
@@ -21,7 +27,7 @@ formatters.setup {
 }
 
 lvim.format_on_save.enabled = true
-lvim.format_on_save.pattern = { "*.py" }  -- disable for all file types
+lvim.format_on_save.pattern = { "*.py" }  -- comment this line to save all file types
 
 -------------------------------------------------------
 -- replace pyright by python-lsp-server (pylsp)

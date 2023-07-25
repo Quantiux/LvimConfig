@@ -1,4 +1,9 @@
--- add r-languageserver to skipped_servers list (run ":LvimCacheReset" for it to take effect)
+--------------------------------------------------
+--------------------------------------------------
+-- config for r
+--------------------------------------------------
+--------------------------------------------------
+-- disable auto-installing r language server (run ":LvimCacheReset" for it to take effect)
 vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "r_language_server" })
 
 -- Nvim-R settings

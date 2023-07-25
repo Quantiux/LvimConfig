@@ -1,3 +1,9 @@
+--------------------------------------------------
+--------------------------------------------------
+-- config for python
+--------------------------------------------------
+--------------------------------------------------
+-- make sure treesitter for python is installed
 lvim.builtin.treesitter.ensure_installed = {
   "python",
 }
@@ -52,3 +58,28 @@ local pyright_opts = {
   },
 }
 require("lvim.lsp.manager").setup("pyright", pyright_opts)
+
+--------------------------------------
+-- set up python debugger (dap-python)
+-- first mason-install "debugpy"
+--------------------------------------
+lvim.builtin.dap.active = true
+local mason_path = vim.fn.glob(vim.fn.stdpath "data" .. "/mason/")
+pcall(function()
+  require("dap-python").setup(mason_path .. "packages/debugpy/venv/bin/python")
+end)
+
+--------------------------------------
+-- set up python env switcher (swenv)
+--------------------------------------
+require('swenv').setup{
+  venvs_path = vim.fn.expand('~/.local/share/virtualenvs'),  -- pipenv path 
+  post_set_venv = function()
+    vim.cmd('LspRestart')   -- restart lsp after switching venv
+  end,
+}
+
+-- keybinding
+lvim.builtin.which_key.mappings["V"] = {
+  "<cmd>lua require('swenv.api').pick_venv()<cr>", "Choose Python Env"
+}
