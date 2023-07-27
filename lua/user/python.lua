@@ -59,11 +59,9 @@ local pyright_opts = {
 }
 require("lvim.lsp.manager").setup("pyright", pyright_opts)
 
---------------------------------------
--- set up python debugger (dap-python)
--- first mason-install "debugpy"
---------------------------------------
-lvim.builtin.dap.active = true
+----------------------------------------------------
+-- set up dap-python (first mason-install "debugpy")
+----------------------------------------------------
 local mason_path = vim.fn.glob(vim.fn.stdpath "data" .. "/mason/")
 pcall(function()
   require("dap-python").setup(mason_path .. "packages/debugpy/venv/bin/python")
