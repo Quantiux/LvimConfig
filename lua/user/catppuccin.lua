@@ -1,6 +1,6 @@
 require("catppuccin").setup{
   transparent_background = false,
-  term_colors = false,
+  term_colors = true,
   dim_inactive = {
     enabled = false, -- dims the background color of inactive window
     shade = "dark",
