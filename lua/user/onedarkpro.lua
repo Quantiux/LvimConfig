@@ -7,3 +7,5 @@ require("onedarkpro").setup{
   }
 }
 
+-- load colorscheme
+lvim.colorscheme = "onedark_vivid"
