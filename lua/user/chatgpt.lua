@@ -1,4 +1,6 @@
+local home = vim.fn.expand("$HOME")
 require("chatgpt").setup{
+  api_key_cmd = "gpg -d " .. home .. "/Documents/Keys/OpenaiAPI.txt.gpg",
   popup_layout = {
     default = "right",
     right = {
