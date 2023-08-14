@@ -9,6 +9,7 @@ lvim.plugins = {
   -- chatGPT
   {
   "jackMort/ChatGPT.nvim",
+    commit = "24bcca7",   -- https://github.com/jackMort/ChatGPT.nvim/issues/265#issuecomment-1676188382
     dependencies = {
       "MunifTanjim/nui.nvim",
     }

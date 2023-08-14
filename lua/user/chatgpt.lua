@@ -1,3 +1,6 @@
+-- define OPENAI_API_HOST variable (https://github.com/jackMort/ChatGPT.nvim/pull/266#issuecomment-1675282464)
+-- vim.env.OPENAI_API_HOST = "api.openai.com"
+
 local home = vim.fn.expand("$HOME")
 require("chatgpt").setup{
   api_key_cmd = "gpg --quiet -d " .. home .. "/Documents/Keys/OpenaiAPI.txt.gpg",

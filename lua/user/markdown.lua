@@ -10,5 +10,3 @@ lvim.builtin.which_key.mappings["m"] = {
   p = { "<cmd>MarkdownPreview<cr>", "Preview" },
   c = { "<cmd>MarkdownPreviewStop<cr>", "Close" },
 }
-
-

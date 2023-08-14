@@ -3,4 +3,3 @@ require("tabnine").setup{
     lua = true
   },
 }
-
