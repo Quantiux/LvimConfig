@@ -9,6 +9,9 @@ require("chatgpt").setup{
     right = {
       width = "45%",
     }
+  },
+  openai_params = {
+    max_tokens = 1000,
   }
 }
 
