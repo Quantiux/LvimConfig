@@ -17,7 +17,6 @@ vim.cmd[[
   let R_objbr_place = 'script,right'          " open object pane right of script
   let R_objbr_h = 10                          " height of object pane (if opens below)
   let R_objbr_w = 40                          " width of object pane (if opens right)
-  let R_commented_lines = 0                   " prevent commented lines from being sourced to console
 ]]
 
 -- cmp-nvim-r setting
