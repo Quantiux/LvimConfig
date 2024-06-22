@@ -1,7 +1,7 @@
 # LunarVim config
 
-UPDATE: Since Lunarvim is [no longer actively maintained](https://github.com/LunarVim/LunarVim/discussions/4518#discussioncomment-8963843),
-I have switched to my own [Neovim config](https://github.com/Quantiux/nvim).
+(UPDATE: Since Lunarvim is [no longer actively maintained](https://github.com/LunarVim/LunarVim/discussions/4518#discussioncomment-8963843),
+I have switched to my own [Neovim config](https://github.com/Quantiux/nvim).)
 
 This repo contains my configuration files for [LunarVim](https://www.lunarvim.org/) to set up
 an IDE for data science using Python and R. It includes essential features such as
